@@ -1,0 +1,58 @@
+.centr{
+	max-width: 720px;
+	margin: 0 auto;
+}
+
+body {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF UI Text", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+img{
+	max-width: 100%;
+	width: auto;
+	margin: 0 auto; 
+	display: block;
+}
+img+center{
+	font-size: .88em;
+}
+
+a {
+	color: #0060a0;
+	text-decoration: none;
+}
+sup a{
+	text-decoration: none;
+	border-bottom: none;
+}
+p+ul{
+	margin-top: -1em;
+}
+
+header:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+header nav{
+	float: left;
+}
+
+header .form-search{
+	float: right;
+	max-width: 350px;
+	width: 100%;
+}
+
+header .form-search input[type=search]{
+	width: calc(100% - 65px);
+}
+
+@media screen and (max-width: 550px) {
+	header .form-search{
+		max-width: 100%;
+		margin-top: .5em;
+	}
+}

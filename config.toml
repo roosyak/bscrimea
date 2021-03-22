@@ -1,0 +1,4 @@
+baseURL = "/" 
+title = "БИЗНЕС СОЮЗ КРЫМА"
+theme = "bsk"
+enableRobotsTXT = "true"
