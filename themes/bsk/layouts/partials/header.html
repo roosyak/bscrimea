@@ -4,12 +4,12 @@
       borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients 
       cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio 
       localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths">  
-  <head>
-    <title>wasp:title >Бизнес Cоюз Крыма</title>
+  <head> 
+    <title>{{.Title}}</title> 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="icon" type="image/png" href="/img/fav.ico">
-    <meta name="description" content="wasp:title-->">
-    <meta name="keywords" content="wasp:title-->">
+    <meta name="description" content="{{.Title}}">
+    <meta name="keywords" content="{{.Title}}">
     <meta name="author" content="">
     <meta charset="utf-8">
     <meta id="viewport" content="width=1024" name="viewport">
@@ -22,10 +22,10 @@
 
     <meta property="og:type" content="article">  
     <!-- meta property="og:url" content="' . $a['url'] . '" -->
-    <meta property="og:title" content="wasp:meta-title-->">
+    <meta property="og:title" content="{{.Title}}">
     <meta property="og:description" content="wasp:meta-description-->">
     <meta property="og:image" content="">
-    <meta name="twitter:card" content="wasp:meta-title-->">
+    <meta name="twitter:card" content="{{.Title}}">
   </head>
   <body class="">
     <div id="loading-mask" style="display: none;"></div>
