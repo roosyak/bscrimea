@@ -1,0 +1,31 @@
+{
+	"k": {
+		"title": "Крым",
+		"adres": "г. Симферополь  бульвар Франко, дом 6",
+		"tel": "+7 (978) 728-64-58",
+		"tel2": "+38 (095) 148-61-90",
+		"email": "bscrimea@ya.ru",
+		"links": [
+			[
+				"twitter",
+				"https://twitter.com/bscrimea",
+				"@bscrimea"
+			],
+			[
+				"facebook",
+				"https://www.facebook.com/bscrimea",
+				"bscrimea"
+			],
+			[
+				"vk",
+				"http://vk.com/businessunion777",
+				"bscrimea777"
+			]
+		]
+	},
+	"m": {
+		"title": "Москва",
+		"adres": "Россия, Москва, 117036, Новодмитровская, д. 2, корп. 1",
+		"tel": "916 040 3532"
+	}
+}

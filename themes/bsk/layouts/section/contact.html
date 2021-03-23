@@ -11,13 +11,18 @@
   <ul class="content">
     <li>
       <div>
-        <?$t = load_block(page . '-1'); ?>
-        <div class="infos animated-line animated wasp-edit" wasp-page="<?=page . '-1' ?>" wasp-grp="<?=page . '-1' ?>"
-          id="<?=isset($t['id']) ? $t['id'] : time() ?>">
-          <h3>
-            <?=$t['title'] ?>
-          </h3>
-          <?=$t['maintxt'] ?>
+        <div class="infos animated-line animated  ">
+          <h3>{{.Site.Data.contact.k.title}}</h3>
+          <p>{{.Site.Data.contact.k.adres}}<br>
+            Тел.: {{.Site.Data.contact.k.tel}}<br>
+            {{.Site.Data.contact.k.tel2}}</p>
+          <p>Email: {{.Site.Data.contact.k.email}}</p>
+          <br>
+          <p>
+            {{ range .Site.Data.contact.k.links }}
+            {{ index . 0 }}: <a href="{{ index . 1 }}">{{ index . 2 }}</a><br>
+            {{end}}
+          </p>
         </div>
 
         <div class="map">
@@ -29,21 +34,13 @@
 
     <li>
       <div>
-        <?$t = load_block(page . '-2'); ?>
-        <div class="infos animated-line animated wasp-edit" wasp-page="<?=page . '-2' ?>" wasp-grp="<?=page . '-2' ?>"
-          id="<?=isset($t['id']) ? $t['id'] : time() ?>">
-          <h3>
-            <?=$t['title'] ?>
-          </h3>
-          <?=$t['maintxt'] ?>
+        <div class="infos animated-line animated wasp-edit">
+          <h3>{{.Site.Data.contact.m.title}}</h3>
+          <p>{{.Site.Data.contact.m.adres}}</p>
+          <p>Телефон: {{.Site.Data.contact.m.tel}}</p> 
         </div>
 
-        <div class="map">
-          <!--script 
-            type="text/javascript" 
-            charset="utf-8" 
-            src="//api-maps.yandex.ru/services/constructor/1.0/js/?sid=vHGO4lYBEIpT8DZJrMdzBfJvQC2M4a0S&width=669&height=480"
-          ></script-->
+        <div class="map"> 
           <iframe
             src="https://yandex.ru/map-widget/v1/?um=constructor%3A9fd1e5f70aa572237758d99100e5d7eddc42828550c97658ba6796a832d3e2a1&amp;source=constructor"
             width="100%" height="480" frameborder="0"></iframe>
@@ -51,7 +48,7 @@
       </div>
     </li>
   </ul>
- 
+
 </section>
 
 {{ partial "footer.html" . }}
