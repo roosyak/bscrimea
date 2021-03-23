@@ -9,9 +9,6 @@
     <div class="current">about-us</div>
     <div class="next"><a href="/news/">прес-релизы</a></div>
   </div>
-  <!-- ./php/pagenav -->
-
-
   <section id="section" class="about-us">
     <!-- h1>
       <span>Заголовок<span style="width: 436px;"></span></span>
@@ -19,20 +16,16 @@
     </h1 -->
     <div class="tagline right animated-line animated wasp-edit" wasp-page="about-us-top-right" wasp-grp="about-us"
       id="21">
-      <h2>«Бизнес Союз Крыма»</h2>
-      <p>это союз амбициозных, целеустремлённых, успешных и смелых людей, направленных на достижение высоких и
-        благородных целей</p>
+      <h2>{{.Params.T1.title}}</h2>
+      <p>{{.Params.T1.text}}</p>
     </div>
 
     <div class="tagline bottom animated-line animated wasp-edit" wasp-page="about-us-top-left" wasp-grp="about-us"
       id="22">
-      <h2>ОСНОВНЫЕ ПРИНЦИПЫ</h2>
-      <p></p>
-      <p>Объективная, честная и независимая оценка малого и среднего бизнеса Крымского региона</p>
-      <p>Максимальная универсальность</p>
-      <p>Доступность применяемых показателей</p>
-      <p>Простота механизма сравнений</p>
-      <p></p>
+      <h2>{{.Params.T2.title}}</h2>
+      {{ range .Params.T2.text}}
+      <p>{{.}}</p>
+      {{end}}
     </div>
 
 
