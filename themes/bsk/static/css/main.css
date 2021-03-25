@@ -1,4 +1,4 @@
-.centr{
+.centr {
 	max-width: 720px;
 	margin: 0 auto;
 }
@@ -9,13 +9,14 @@ body {
 	line-height: 24px;
 }
 
-img{
+img {
 	max-width: 100%;
 	width: auto;
-	margin: 0 auto; 
+	margin: 0 auto;
 	display: block;
 }
-img+center{
+
+img+center {
 	font-size: .88em;
 }
 
@@ -23,11 +24,13 @@ a {
 	color: #0060a0;
 	text-decoration: none;
 }
-sup a{
+
+sup a {
 	text-decoration: none;
 	border-bottom: none;
 }
-p+ul{
+
+p+ul {
 	margin-top: -1em;
 }
 
@@ -36,23 +39,45 @@ header:after {
 	clear: both;
 	display: block;
 }
-header nav{
+
+header nav {
 	float: left;
 }
 
-header .form-search{
+header .form-search {
 	float: right;
 	max-width: 350px;
 	width: 100%;
 }
 
-header .form-search input[type=search]{
+header .form-search input[type=search] {
 	width: calc(100% - 65px);
 }
 
 @media screen and (max-width: 550px) {
-	header .form-search{
+	header .form-search {
 		max-width: 100%;
 		margin-top: .5em;
 	}
+}
+
+#section .content.tagline {
+	background: #fff;
+	width: 580px;
+	padding-bottom: 5px;
+}
+
+#section .content.tagline a:hover {
+	color: #c00;
+}
+
+#section .content.tagline * {
+	color: #333;
+	padding-left: 7px;
+	padding-right: 7px;
+}
+
+.tagline p a font {
+	position: absolute;
+	top: -999px;
 }
