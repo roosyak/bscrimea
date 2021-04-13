@@ -1,0 +1,53 @@
+{{ partial "header.html" . }}
+
+
+<!-- company -->
+
+
+<!-- php/pagenav -->
+<img id="imgbg" src="/img/bg/safe-harbor.jpg">
+<div id="pagenav">
+	<div class="current">company</div>
+	<div class="next"><a href="/contact/">Контакты</a></div>
+</div>
+<!-- ./php/pagenav -->
+
+<!-- Page Content -->
+<section id="section" class="press-releases">
+	<h1>
+		<span>АГЕНТСТВА</span>
+		<span style="font-size: 78%">Недвижимости</span>
+	</h1>
+
+	<!-- div class="Tahoma">
+			<font style="color:#ee445f;margin-left: -0.8em;">*</font> Для добавления новых компаний
+			и исправления
+			информационных данных
+			просьба писать на<br>
+			<center>bscrimea@ya.ru</center> <br>
+			более подробно <u><a href="/?law=help&amp;id=75" target="_blank">здесь</a></u>
+		</div -->
+
+
+	{{ $town := "_"}}
+	<ul id="headlines-listing">
+
+		{{ range sort .Pages ".Params.town" }}
+		{{ if ne $town .Params.town}}
+			<li class="town_hr">{{.Params.town}}</li>
+			{{ $town = .Params.town}}
+		{{ end}}
+
+			<li>
+				<div class="wasp-edit content -tagline">
+					<a href="{{.Permalink}}">{{.Title}}</a>
+
+				</div>
+			</li>
+			{{end}}
+	</ul>
+</section>
+
+<!-- ./company -->
+
+{{ partial "footer.html" . }}
