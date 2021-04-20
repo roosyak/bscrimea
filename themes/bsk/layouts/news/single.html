@@ -7,7 +7,7 @@
 </div>
 
 <section id="section" class="share-price">
-	<div class="content tagline bottom animated-line animated">
+	<div class="content tagline bottom Tahoma">
 		<h1>{{.Title}}</h1>
 		{{ if .Params.img }}
 		<img src="{{.Params.img}}" align="right" style="max-width: 300px;">
@@ -20,5 +20,10 @@
 			</time></p>
 	</div>
 </section>
-
+<style>
+	h1 {
+		padding: 1em 0;
+		font-size: 1.3em;
+	}
+</style>
 {{ partial "footer.html" . }}
