@@ -1,4 +1,4 @@
-baseURL = "/" 
+baseURL = "https://roosyak.github.io/bscrimea-hugo/" 
 title = "Бизнес союз Крыма"
 theme = "bsk"
 enableRobotsTXT = "true"
