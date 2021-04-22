@@ -1,4 +1,0 @@
-Sitemap: {{ $.Site.BaseURL }}/sitemap.xml
-User-agent: *
-Allow: /
-Disallow: /s/
