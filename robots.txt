@@ -1,4 +1,3 @@
-Sitemap: https://roosyak.github.io/bscrimea-hugo//sitemap.xml
+Sitemap: https://roosyak.github.io/bscrimea-hugo/sitemap.xml
 User-agent: *
-Allow: /
-Disallow: /s/
+Allow: / 
