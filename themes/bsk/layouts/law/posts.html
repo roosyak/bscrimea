@@ -4,10 +4,10 @@
 <!-- law -->
 
 <!-- php/pagenav -->
-<img id="imgbg" src="/img/bg/123.jpg" style="width: 1851px; height: 1041.19px; left: 0px; top: -344px;">
+<img id="imgbg" src="{{ "/img/bg/123.jpg" | relURL }}" style="width: 1851px; height: 1041.19px; left: 0px; top: -344px;">
 <div id="pagenav">
 	<div class="current">law</div>
-	<div class="next"><a href="/news/">прес-релизы</a></div>
+	<div class="next"><a href="{{ "news" | relURL }}">прес-релизы</a></div>
 </div>
 <!-- ./php/pagenav -->
 

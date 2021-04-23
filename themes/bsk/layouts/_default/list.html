@@ -5,10 +5,10 @@
 
 
 <!-- php/pagenav -->
-<img id="imgbg" src="/img/bg/news.jpg">
+<img id="imgbg" src="{{ "/img/bg/news.jpg" | relURL }}">
 <div id="pagenav">
 	<div class="current">news</div>
-	<div class="next"><a href="/law/main/">Право</a></div>
+	<div class="next"><a href="{{ "law/main" | relURL }}">Право</a></div>
 </div>
 <!-- ./php/pagenav -->
 

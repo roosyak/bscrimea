@@ -5,10 +5,10 @@
 
 
 <!-- php/pagenav -->
-<img id="imgbg" src="/img/bg/safe-harbor.jpg">
+<img id="imgbg" src="{{ "/img/bg/safe-harbor.jpg" | relURL }}">
 <div id="pagenav">
 	<div class="current">company</div>
-	<div class="next"><a href="/contact/">Контакты</a></div>
+	<div class="next"><a href="{{ "contact" | relURL }}">Контакты</a></div>
 </div>
 <!-- ./php/pagenav -->
 
@@ -25,7 +25,7 @@
 			информационных данных
 			просьба писать на<br>
 			<center>bscrimea@ya.ru</center> <br>
-			более подробно <u><a href="/?law=help&amp;id=75" target="_blank">здесь</a></u>
+			более подробно <u><a href="?law=help&amp;id=75" target="_blank">здесь</a></u>
 		</div -->
 
 

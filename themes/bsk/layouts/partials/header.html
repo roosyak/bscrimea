@@ -4,7 +4,7 @@
 <head>
   <title>{{.Title}}</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <link rel="icon" type="image/png" href="/img/fav.ico">
+  <link rel="icon" type="image/png" href="{{ "/img/fav.ico" | relURL }}" >
   <meta name="description" content="{{.Title}}">
   <meta name="keywords" content="{{.Title}}">
   <meta name="author" content="">
@@ -12,11 +12,17 @@
   <meta id="viewport" content="width=1024" name="viewport">
   <meta name="generator" content="HUGO" />
   <meta name='yandex-verification' content='5bec824e1a917d60' />
-  <link rel="stylesheet" href="/css/reset.css" type="text/css" media="screen">
-  <link rel="stylesheet" href="/css/style.css" type="text/css" media="screen">
-  <link rel="stylesheet" href="/css/main.css" type="text/css" media="screen">
-  <script type="text/javascript" src="/js/jquery.min.js"></script>
-  <script type="text/javascript" src="/js/modernizr.js"></script>
+  <link rel="stylesheet" href="{{ "/css/reset.css" | relURL }}" type="text/css" media="screen">
+  <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}" type="text/css" media="screen">
+  <link rel="stylesheet" href="{{ "/css/main.css" | relURL }}" type="text/css" media="screen">
+  <script>
+    if (location.href.indexOf('?')>0){
+      var l = location.href.replace('?', '');
+      location.href = l.replace('=', '/');
+    }
+    </script>
+  <script type="text/javascript" src="{{ "/js/jquery.min.js" | relURL }}"></script>
+  <script type="text/javascript" src="{{ "/js/modernizr.js" | relURL }}"></script>
 </head>
 
 <body class="">

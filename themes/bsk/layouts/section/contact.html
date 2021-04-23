@@ -1,9 +1,9 @@
 {{ partial "header.html" . }}
-<img id="imgbg" src="/img/contact-us.jpg">
+<img id="imgbg" src="{{ "/img/contact-us.jpg" | relURL }}">
 
 <div id="pagenav">
   <div class="current">contact</div>
-  <div class="next"><a href="/about-us/">О компании</a></div>
+  <div class="next"><a href="{{ "about-us" | relURL }}">О компании</a></div>
 </div>
 
 <!-- Page Content -->

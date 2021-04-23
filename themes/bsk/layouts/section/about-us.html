@@ -4,10 +4,10 @@
   <!-- about-us -->
 
   <!-- php/pagenav -->
-  <img id="imgbg" src="/img/bg/about-us.jpeg" style="width: 1851px; height: 1041.19px; left: 0px; top: -325.5px;">
+  <img id="imgbg" src="{{ "/img/bg/about-us.jpeg" | relURL }}" style="width: 1851px; height: 1041.19px; left: 0px; top: -325.5px;">
   <div id="pagenav">
     <div class="current">about-us</div>
-    <div class="next"><a href="/news/">прес-релизы</a></div>
+    <div class="next"><a href="{{ "news" | relURL }}">прес-релизы</a></div>
   </div>
   <section id="section" class="about-us">
     <!-- h1>
@@ -60,7 +60,7 @@
     <div class="content wasp-edit" wasp-page="about-us-2" wasp-grp="about-us" id="25">
       <div>
         <div class="img">
-          <img src="/img/about_us.jpeg" alt="">
+          <img src="{{ "/img/about_us.jpeg" | relURL }}" alt="">
           <div></div>
         </div>
         <h3>Кто мы и чем занимаемся</h3>
@@ -83,7 +83,7 @@
     <div class="content wasp-edit" wasp-page="about-us-3" wasp-grp="about-us" id="26">
       <div>
         <!-- div class="img">
-          <img src="/img/about_us.jpeg" alt="">
+          <img src="{{ "/img/about_us.jpeg" | relURL }}" alt="">
           <div></div>
         </div -->
         <h3 style="margin-right: 0">Чем может помочь сайт нашего Центра?</h3>
@@ -95,7 +95,7 @@
     </div>
 
     <!--div class="btn-next-section">
-      <a href="/operations/">
+      <a href="{{ "operations" | relURL }}">
         <span class="text">
           <span class="static">База знаний</span>
           <span class="frame"></span>

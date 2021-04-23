@@ -3,15 +3,21 @@
     <div class="header-full" style="padding-top: 45px;">
       <div class="locked-bg"></div>
 
-      <a href="/" class="logo">
-        <img class="big" src="/img/logo.png" alt="">
-        <img class="small" src="/img/logo.png" alt="">
+      <a href="{{ "/" | relURL }}" class="logo">
+        <img class="big" src="{{ "/img/logo.png" | relURL }}" alt="">
+        <img class="small" src="{{ "/img/logo.png" | relURL }}" alt="">
       </a>
 
       <ul class="nav-main">
-        <li {{if eq .Section "about-us" }}class="active"{{end}}><a href="/about-us/">О нас</a></li>
-        <li {{if eq .Section "news" }}class="active"{{end}}><a href="/news/">Новости</a></li>
-        <li {{if eq .Section "contact" }}class="active"{{end}}><a href="/contact/">Контакты</a></li>
+        <li {{if eq .Section "about-us" }}class="active" {{end}}>
+          <a href="{{ "/about-us/" | relURL }}">О нас</a>
+        </li>
+        <li {{if eq .Section "news" }}class="active" {{end}}>
+          <a href="{{ "/news/"| relURL }}">Новости</a>
+        </li>
+        <li {{if eq .Section "contact" }}class="active" {{end}}>
+          <a href="{{ "/contact/"| relURL }}">Контакты</a>
+        </li>
       </ul>
     </div>
   </div>

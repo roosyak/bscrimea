@@ -1,16 +1,16 @@
 {{ partial "header.html" . }}
 
-<img id="imgbg" src="/img/bg/news.jpg">
+<img id="imgbg" src="{{ "/img/bg/news.jpg" | relURL }}">
 <div id="pagenav">
 	<div class="current">news</div>
-	<div class="next"><a href="/law/">Право</a></div>
+	<div class="next"><a href="{{ "law" | relURL }}">Право</a></div>
 </div>
 
 <section id="section" class="share-price">
 	<div class="content tagline bottom Tahoma">
 		<h1>{{.Title}}</h1>
 		{{ if .Params.img }}
-		<img src="{{.Params.img}}" align="right" style="max-width: 300px;">
+		<img src="{{.Params.img | relURL }}" align="right" style="max-width: 300px;">
 		{{ end}}
 		{{.Content}}
 		<p><time datetime="{{ .PublishDate.Format " 01-02-2006 15:04:05" }}">
