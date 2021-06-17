@@ -4,13 +4,13 @@ backend:
 media_folder: static/img
 public_folder: /img
 collections:
-  - name: 'Бизнес союз Крыма'
-    label: 'Blog'
-    folder: 'content/blog'
+  - name: 'Новости'
+    label: 'news'
+    folder: 'content/news'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
-      preview: false
+      preview: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
