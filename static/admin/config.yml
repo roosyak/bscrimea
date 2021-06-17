@@ -4,8 +4,8 @@ backend:
 media_folder: static/img
 public_folder: /img
 collections:
-  - name: 'Новости'
-    label: 'news'
+  - name: 'news'
+    label: 'Новости'
     folder: 'content/news'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
@@ -16,3 +16,19 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'company'
+    label: 'Компании'
+    folder: 'content/company'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Название', name: 'title', widget: 'string' }
+      - { label: 'Адресс', name: 'address', widget: 'string' }
+      - { label: 'Сайт', name: 'site', widget: 'string' }
+      - { label: 'Город', name: 'town', widget: 'string' }
+      - { label: 'mail', name: 'mail', widget: 'string' }
+      - { label: 'Телефон', name: 'tel', widget: 'array' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+
