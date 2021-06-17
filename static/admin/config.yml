@@ -29,6 +29,6 @@ collections:
       - { label: 'Сайт', name: 'site', widget: 'string' }
       - { label: 'Город', name: 'town', widget: 'string' }
       - { label: 'mail', name: 'mail', widget: 'string' }
-      - { label: 'Телефон', name: 'tel', widget: 'array' }
+      - { label: 'Телефон', name: 'tel', widget: 'list' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
 
