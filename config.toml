@@ -1,4 +1,4 @@
-baseURL = "http://bscrimea.ru" 
+baseURL = "https://bscrimea.ru/" 
 title = "Бизнес союз Крыма"
 theme = "bsk"
 enableRobotsTXT = "true"
